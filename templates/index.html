@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/registration">Регистрация</a>
+<a href="/authorization">Авторизация</a>
+
+<main>
+    {{if eq .Role "manager"}}
+        <button>Создать объявление</button>
+        <script src="/assets/js/board.js"></script>
+    {{end}}
+</main>
+
+</body>
+</html>
